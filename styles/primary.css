@@ -1,0 +1,56 @@
+@font-face {
+	font-family: 'Sinkin Sans';
+	src: url(../fonts/SinkinSans-400Regular.otf);
+}
+h1 {
+	margin: 0;
+}
+
+body {
+	font-family: 'Sinkin Sans';
+}
+
+.container {
+	width: 1000px;
+	margin: 20px auto;
+}
+
+.card-container {
+	-webkit-perspective: 900px;
+	perspective: 900px;
+}
+
+.card {
+	float: left;
+	position: relative;
+	color: #fff;
+	text-align: center;
+	line-height: 300px;
+	margin: 10px;
+	width: 300px;
+	height: 300px;
+	color: #fff;
+
+	transition: transform 0.9s ease-out;
+	transform-style: preserve-3d;
+}
+
+.card-front,
+.card-back {
+	position: absolute;
+	background: #5677fc;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.card-back {
+	transform: rotateY(180deg);
+}
+
+.card:hover {
+	transform: rotateY(180deg);
+}

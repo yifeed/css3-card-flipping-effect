@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>CSS3 Card Flipping Effect</title>
+
+		<!-- styles -->
+		<link rel="stylesheet" href="styles/primary.css"/>
+	</head>
+	<body>
+
+		<!-- PAGE WRAPPER -->
+		<div class="container">
+
+			<!-- card container -->
+			<div class="card-container">
+				<div class="card" data-background="#e51c23">
+					<!-- front of the card -->
+					<div class="card-front">
+						<h1>Hello</h1>
+					</div>
+					<!-- end of front -->
+
+					<!-- back of the card -->
+					<div class="card-back">
+						<h1>World!</h1>
+					</div>
+					<!-- end of back -->
+				</div>
+
+				<div class="card" data-background="#e91e63">
+					<!-- front of the card -->
+					<div class="card-front">
+						<h1>Hello</h1>
+					</div>
+					<!-- end of front -->
+
+					<!-- back of the card -->
+					<div class="card-back">
+						<h1>World!</h1>
+					</div>
+					<!-- end of back -->
+				</div>
+
+				<div class="card" data-background="#9c27b0">
+					<!-- front of the card -->
+					<div class="card-front">
+						<h1>Hello</h1>
+					</div>
+					<!-- end of front -->
+
+					<!-- back of the card -->
+					<div class="card-back">
+						<h1>World!</h1>
+					</div>
+					<!-- end of back -->
+				</div>
+
+				<div class="card" data-background="#673ab7">
+					<!-- front of the card -->
+					<div class="card-front">
+						<h1>Hello</h1>
+					</div>
+					<!-- end of front -->
+
+					<!-- back of the card -->
+					<div class="card-back">
+						<h1>World!</h1>
+					</div>
+					<!-- end of back -->
+				</div>
+
+				<div class="card" data-background="#3f51b5">
+					<!-- front of the card -->
+					<div class="card-front">
+						<h1>Hello</h1>
+					</div>
+					<!-- end of front -->
+
+					<!-- back of the card -->
+					<div class="card-back">
+						<h1>World!</h1>
+					</div>
+					<!-- end of back -->
+				</div>
+
+				<div class="card" data-background="#5677fc">
+					<!-- front of the card -->
+					<div class="card-front">
+						<h1>Hello</h1>
+					</div>
+					<!-- end of front -->
+
+					<!-- back of the card -->
+					<div class="card-back">
+						<h1>World!</h1>
+					</div>
+					<!-- end of back -->
+				</div>
+
+				<div class="card" data-background="#795548">
+					<!-- front of the card -->
+					<div class="card-front">
+						<h1>Hello</h1>
+					</div>
+					<!-- end of front -->
+
+					<!-- back of the card -->
+					<div class="card-back">
+						<h1>World!</h1>
+					</div>
+					<!-- end of back -->
+				</div>
+
+				<div class="card" data-background="#8bc34a">
+					<!-- front of the card -->
+					<div class="card-front">
+						<h1>Hello</h1>
+					</div>
+					<!-- end of front -->
+
+					<!-- back of the card -->
+					<div class="card-back">
+						<h1>World!</h1>
+					</div>
+					<!-- end of back -->
+				</div>
+
+				<div class="card" data-background="#00bcd4">
+					<!-- front of the card -->
+					<div class="card-front">
+						<h1>Hello</h1>
+					</div>
+					<!-- end of front -->
+
+					<!-- back of the card -->
+					<div class="card-back">
+						<h1>World!</h1>
+					</div>
+					<!-- end of back -->
+				</div>
+
+			</div>
+			<!-- end of card container-->
+		</div>
+		<!-- END PAGE WRAPPER -->
+
+		<!-- scripts -->
+		<script type="text/javascript" src="scripts/jquery-1.11.1.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('.card').each(function(index, elem) {
+					var backgroundColor = $(elem).attr('data-background');
+					$(elem).find(' > div').css('background', backgroundColor);
+				});
+			});
+		</script>
+	</body>
+</html>
