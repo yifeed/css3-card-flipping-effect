@@ -9,7 +9,7 @@
 
 .card-container {
 	-webkit-perspective: 900px;
-   -moz-perspective: 900px
+   -moz-perspective: 900px;
    perspective: 900px;
 }
 
@@ -39,7 +39,7 @@
 	-webkit-transform: rotateY(180deg);
    -moz-transform: rotateY(180deg);
    -ms-transform: rotateY(180deg);
-   transform: rotateY(180deg));
+   transform: rotateY(180deg);
 }
 
 .card-front,
