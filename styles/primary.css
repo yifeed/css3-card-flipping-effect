@@ -1,42 +1,42 @@
 .container {
-	width: 1000px;
-	margin: 20px auto;
+   width: 1000px;
+   margin: 20px auto;
 }
 
 .card h1 {
-	margin: 0;
+   margin: 0;
 }
 
 .card-container {
-	-webkit-perspective: 900px;
+   -webkit-perspective: 900px;
    -moz-perspective: 900px;
    perspective: 900px;
 }
 
 .card {
-	float: left;
-	position: relative;
-
+   float: left;
+   position: relative;
+   
    width: 300px;
    height: 300px;
    margin: 10px;
    line-height: 300px;
-
+   
    color: #fff;
    text-align: center;
-
+   
    -webkit-transition: transform 0.9s ease-out;
    -moz-transition: transform 0.9s ease-out;
    -o-transition: transform 0.9s ease-out;
    transition: transform 0.9s ease-out;
-
+   
    -webkit-transform-style: preserve-3d;
    -moz-transform-style: preserve-3d;
    transform-style: preserve-3d;
 }
 
 .card:hover {
-	-webkit-transform: rotateY(180deg);
+   -webkit-transform: rotateY(180deg);
    -moz-transform: rotateY(180deg);
    -ms-transform: rotateY(180deg);
    transform: rotateY(180deg);
@@ -44,12 +44,12 @@
 
 .card-front,
 .card-back {
-	position: absolute;
+   position: absolute;
    top: 0;
    left: 0;
    bottom: 0;
    right: 0;
-
+   
    background: #5677fc;
    
    -webkit-backface-visibility: hidden;
@@ -66,7 +66,7 @@
 }
 
 .card-back {
-	-webkit-transform: rotateY(180deg);
+   -webkit-transform: rotateY(180deg);
    -moz-transform: rotateY(180deg);
    -ms-transform: rotateY(180deg);
    transform: rotateY(180deg);
