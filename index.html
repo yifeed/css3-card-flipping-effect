@@ -16,7 +16,7 @@
 
 			<!-- card container -->
 			<div class="card-container">
-				<div class="card" data-background="#e51c23">
+				<div class="card">
 					<!-- front of the card -->
 					<div class="card-front">
 						<h1>Hello</h1>
@@ -30,29 +30,29 @@
 					<!-- end of back -->
 				</div>
 
-				<div class="card" data-background="#e91e63">
+				<div class="card">
 					<!-- front of the card -->
-					<div class="card-front">
+					<div class="card-front green">
 						<h1>Hello</h1>
 					</div>
 					<!-- end of front -->
 
 					<!-- back of the card -->
-					<div class="card-back">
+					<div class="card-back green">
 						<h1>World!</h1>
 					</div>
 					<!-- end of back -->
 				</div>
 
-				<div class="card" data-background="#9c27b0">
+				<div class="card">
 					<!-- front of the card -->
-					<div class="card-front">
+					<div class="card-front red">
 						<h1>Hello</h1>
 					</div>
 					<!-- end of front -->
 
 					<!-- back of the card -->
-					<div class="card-back">
+					<div class="card-back red">
 						<h1>World!</h1>
 					</div>
 					<!-- end of back -->
@@ -61,16 +61,5 @@
 			<!-- end of card container-->
 		</div>
 		<!-- END PAGE WRAPPER -->
-
-		<!-- scripts -->
-		<script type="text/javascript" src="scripts/jquery-1.11.1.js"></script>
-		<script type="text/javascript">
-			$(function() {
-				$('.card').each(function(index, elem) {
-					var backgroundColor = $(elem).attr('data-background');
-					$(elem).find(' > div').css('background', backgroundColor);
-				});
-			});
-		</script>
 	</body>
 </html>
